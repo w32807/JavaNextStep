@@ -15,7 +15,7 @@ public class CalculatorTest {
     
     @Before
     public void setup() {   // 바로 인스턴스 변수로 new 생성하지 말고, before 어노테이션을 주자 (바로 생성하기 / before의 차이는??) 
-        cal = new Calculator();
+        cal = new Calculator(); // before 어노테이션을 이용하여, 테스트 메소드에 대한 초기화를 한다.
         System.out.println("Generate cal");
     }
     
